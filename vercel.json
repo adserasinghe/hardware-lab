@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      { "source": "/stock", "destination": "/stock.html" },
+      { "source": "/disposal", "destination": "/disposal.html" },
+      { "source": "/destroy", "destination": "/destroy.html" },
+      { "source": "/contact", "destination": "/contact.html" }
+    ]
+  }
