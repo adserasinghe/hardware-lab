@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposal Management | Hardware Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>HARDWARE LAB EQUIPMENT MANAGEMENT SYSTEM</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="/">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="stock.html">
+                    <i class="fas fa-boxes"></i>
+                    <span>Stock</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="disposal.html">
+                    <i class="fas fa-trash-alt"></i>
+                    <span>Disposal</span>
+                </a>
+            </li>
+            <li>
+                <a href="destroy.html">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <span>Destroy</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search disposal items...">
+            </div>
+            <div class="user-area">
+                <div class="user-img">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+                <span>Admin</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h2>Disposal Management</h2>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Disposal</li>
+            </ul>
+        </div>
+
+        <!-- Disposal Content -->
+        <div class="page-content">
+            <div class="action-bar">
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> New Disposal Request
+                </button>
+                <div class="filters">
+                    <select>
+                        <option>All Categories</option>
+                        <option>Electronics</option>
+                        <option>Tools</option>
+                        <option>Components</option>
+                    </select>
+                    <select>
+                        <option>All Status</option>
+                        <option>Pending</option>
+                        <option>Approved</option>
+                        <option>Rejected</option>
+                    </select>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Item Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Requested By</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#D1001</td>
+                            <td>Old CRT Monitors</td>
+                            <td>Electronics</td>
+                            <td>5</td>
+                            <td>John Smith</td>
+                            <td>2025-05-15</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>
+                                <button class="btn-icon" title="Approve"><i class="fas fa-check"></i></button>
+                                <button class="btn-icon" title="Reject"><i class="fas fa-times"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#D1002</td>
+                            <td>Broken Power Supplies</td>
+                            <td>Electronics</td>
+                            <td>3</td>
+                            <td>Sarah Johnson</td>
+                            <td>2025-05-10</td>
+                            <td><span class="status-badge available">Approved</span></td>
+                            <td>
+                                <button class="btn-icon" title="Process"><i class="fas fa-trash"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#D1003</td>
+                            <td>Obsolete CPUs</td>
+                            <td>Components</td>
+                            <td>12</td>
+                            <td>Mike Brown</td>
+                            <td>2025-05-05</td>
+                            <td><span class="status-badge destroyed">Rejected</span></td>
+                            <td>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#D1004</td>
+                            <td>Damaged Cables</td>
+                            <td>Components</td>
+                            <td>25</td>
+                            <td>Emily Davis</td>
+                            <td>2025-05-01</td>
+                            <td><span class="status-badge available">Approved</span></td>
+                            <td>
+                                <button class="btn-icon" title="Process"><i class="fas fa-trash"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

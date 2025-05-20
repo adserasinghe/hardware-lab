@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destroy Management | Hardware Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>HARDWARE LAB EQUIPMENT MANAGEMENT SYSTEM</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="/">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="stock.html">
+                    <i class="fas fa-boxes"></i>
+                    <span>Stock</span>
+                </a>
+            </li>
+            <li>
+                <a href="disposal.html">
+                    <i class="fas fa-trash-alt"></i>
+                    <span>Disposal</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="destroy.html">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <span>Destroy</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search destroyed items...">
+            </div>
+            <div class="user-area">
+                <div class="user-img">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+                <span>Admin</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h2>Destroy Management</h2>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Destroy</li>
+            </ul>
+        </div>
+
+        <!-- Destroy Content -->
+        <div class="page-content">
+            <div class="action-bar">
+                <button class="btn btn-danger">
+                    <i class="fas fa-fire"></i> Process Destruction
+                </button>
+                <div class="filters">
+                    <select>
+                        <option>All Categories</option>
+                        <option>Electronics</option>
+                        <option>Tools</option>
+                        <option>Components</option>
+                    </select>
+                    <select>
+                        <option>All Time</option>
+                        <option>This Month</option>
+                        <option>Last Month</option>
+                        <option>This Year</option>
+                    </select>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Destroy ID</th>
+                            <th>Item Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Destroyed By</th>
+                            <th>Date</th>
+                            <th>Method</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#X1001</td>
+                            <td>Old CRT Monitors</td>
+                            <td>Electronics</td>
+                            <td>5</td>
+                            <td>John Smith</td>
+                            <td>2025-05-18</td>
+                            <td>Recycling</td>
+                            <td>
+                                <button class="btn-icon" title="View Certificate"><i class="fas fa-file-certificate"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#X1002</td>
+                            <td>Broken Power Supplies</td>
+                            <td>Electronics</td>
+                            <td>3</td>
+                            <td>Sarah Johnson</td>
+                            <td>2025-05-12</td>
+                            <td>Recycling</td>
+                            <td>
+                                <button class="btn-icon" title="View Certificate"><i class="fas fa-file-certificate"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#X1003</td>
+                            <td>Damaged Hard Drives</td>
+                            <td>Electronics</td>
+                            <td>8</td>
+                            <td>Mike Brown</td>
+                            <td>2025-05-05</td>
+                            <td>Shredding</td>
+                            <td>
+                                <button class="btn-icon" title="View Certificate"><i class="fas fa-file-certificate"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#X1004</td>
+                            <td>Expired Chemicals</td>
+                            <td>Consumables</td>
+                            <td>15</td>
+                            <td>Emily Davis</td>
+                            <td>2025-04-28</td>
+                            <td>Chemical Treatment</td>
+                            <td>
+                                <button class="btn-icon" title="View Certificate"><i class="fas fa-file-certificate"></i></button>
+                                <button class="btn-icon" title="View Details"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
