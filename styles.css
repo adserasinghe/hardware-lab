@@ -132,7 +132,7 @@ border-left: 3px solid var(--primary-color);
     align-items: center;
 }
 
-.user-area .user-img {
+.user-area .user-img i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
